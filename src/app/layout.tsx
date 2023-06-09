@@ -1,5 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { ReduxProvider } from '@/redux/provider'
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className='min-h-screen bg-gradient-to-br from-blue-500
+          text- to-blue-300'>
+          <ReduxProvider>{children}</ReduxProvider>
+          <Footer/>
+        </div>
+      </body>
     </html>
   )
 }
