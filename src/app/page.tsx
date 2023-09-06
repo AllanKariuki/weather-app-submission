@@ -43,7 +43,8 @@ export default function Home() {
             <button className="rounded-full bg-gradient-to-r from-blue-600
             text- to-blue-300 w-[400px] mt-5 mb-10 p-5 items-center text-white md:mt-10" onClick={onClickToggle}>
              Get Started
-           </button>}
+           </button>
+        }
     </section>
   )
 }

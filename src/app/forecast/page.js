@@ -8,10 +8,10 @@ import { fetchWeather } from '../../redux/features/weatherSlice';
 
 const page = () => {
 
-  const dispatch = useDispatch();
-  const searchResult = useAppSelector((state) => state.weatherReducer.value.weatherResult);
-  const result = searchResult
-  dispatch(fetchWeather());
+  // const dispatch = useDispatch();
+  // const searchResult = useAppSelector((state) => state.weatherReducer.value.weatherResult);
+  // const result = searchResult
+  // dispatch(fetchWeather());
   return (
     <div className='items-center justify-center'>
       
